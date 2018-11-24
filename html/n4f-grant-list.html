@@ -4,25 +4,48 @@
     <meta charset="utf-8">
     <title></title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+      .n4f-button {
+        border-color: #6C1D45;
+        color: #6C1D45;
+        background-color: #FFFFFF
+      }
+      .n4f-button:hover {
+        background-color: #6C1D45;
+        color: #FFFFFF;
+      }
+      .n4f-button:focus {
+        box-shadow: none;
+      }
+      .n4f-grant-list__grant {
+        border-radius: 5px;
+        background-color: #d3d3d3
+      }
+
+    </style>
   </head>
   <body>
     <main>
-      <div class="n4f-grant-list">
+      <div class="n4f-grant-list container">
         <!--TODO: søkefunksjon/filter for støtteordninger -->
         <div class="n4f-grant-list__filter"></div>
-        Liste over støtteordninger.
+        <h2>Liste over støtteordninger.</h2>
         De må tas fra en database eller noe.
         Her er et eksempel på et innslag i listen.
-        <div class="n4f-grant-list__grant">
-          <h5>Navn på Ordning</h5>
-          <p>Beskrivelse med ord</p>
-          <div class="container">
-            <span>Ting1<br /></span>
-            <span>Ting2<br /></span>
-            <span>Ting3<br /></span>
+        <div class="n4f-grant-list__grant container">
+          <div class="row">
+            <div class="col-8">
+              <h5>Navn på Ordning</h5>
+              <p>Beskrivelse med ord</p>
+            </div>
+            <div class="col-4">
+              <span>Ting1<br /></span>
+              <span>Ting2<br /></span>
+              <span>Ting3<br /></span>
+              <button class="n4f-button btn btn-default" role="link"> Trykk for mer info (lenke til side om støtteordningen.)</button>
+              <button class="n4f-button btn btn-default" role="link"> Last ned PDF</button>
+            </div>
           </div>
-          <button class="n4f-button" role="link"> Trykk for mer info (lenke til side om støtteordningen.)</button>
-          <button class="n4f-button" role="link"> Last ned PDF</button>
         </div>
       </div>
     </main>
