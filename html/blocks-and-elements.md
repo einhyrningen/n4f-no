@@ -11,3 +11,7 @@
 ###n4f-page
 - `n4f-page`
 - `n4f-page__excerpt`
+- `n4f-page__sidebar`
+
+###n4f-image
+- `n4f-image__image-floating_position_right`
