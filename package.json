@@ -7,10 +7,11 @@
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
   },
+  "sasslintConfig": "sass-lint.yml",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint src/",
+    "lint": "eslint src/; sass-lint -v -q",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -26,6 +27,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.0",
-    "eslint-plugin-react-with-styles": "^2.1.0"
+    "eslint-plugin-react-with-styles": "^2.1.0",
+    "sass-lint": "^1.12.1"
   }
 }
