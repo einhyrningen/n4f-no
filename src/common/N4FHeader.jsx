@@ -5,7 +5,7 @@ function N4FHeader() {
   return <div>
     <header class="n4f-header">
       <div class="n4f-header__logo"></div>
-      {N4FNav()}}
+      {N4FNav()}
     </header>
   </div>
 }

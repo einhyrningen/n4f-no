@@ -1,6 +1,7 @@
 import React from 'react';
 import './Landing.scss';
 import N4FHeader from '../common/N4FHeader.jsx';
+import N4FFooter from '../common/N4FFooter.jsx';
 
 function Landing() {
   return <div>
@@ -25,9 +26,7 @@ function Landing() {
         <p class="n4f-articlebox__article-title">Overskrift</p>
         <div class="n4f-article__excerpt">Her står ingressen. les mer</div>
       </article>
-      <footer>
-        <div class="n4f-footer">Her kjem footern</div>
-      </footer>
+      {N4FFooter()}
     </div>;
 }
 export default Landing;
