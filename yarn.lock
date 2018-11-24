@@ -2921,6 +2921,7 @@ eslint-plugin-jsx-a11y@6.1.2, eslint-plugin-jsx-a11y@^6.1.1:
 eslint-plugin-react-with-styles@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-with-styles/-/eslint-plugin-react-with-styles-2.1.0.tgz#d19df54ee46c50cdf1e449e6b2b864d5a44f5987"
+  integrity sha512-NbfQPCUdSfiN7/BUrzodMAqpvLdZDOwiPmJ2PUYPy2DeTDNn+orKM8MTr5LM7hGW64GTTbrkN7jjqOYb14p2+A==
   dependencies:
     has "^1.0.1"
 

@@ -1,11 +1,10 @@
 import React from 'react';
 import './Landing.scss';
+import N4FHeader from '../common/N4FHeader.jsx';
 
 function Landing() {
   return <div>
-      <header>
-        <div class="n4f-header"></div>
-      </header>
+      {N4FHeader()}
       <article class="n4f-highlight">
         <p class="n4f-highlight__intro-text">Super-Hyperion er det nasjonale forbundet for fantastiske fritidsinteresser.</p>
       </article>
