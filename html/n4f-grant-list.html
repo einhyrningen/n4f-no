@@ -7,22 +7,24 @@
   </head>
   <body>
     <main>
-      <article class="n4f-grant">
-        <header>
-          <h2>Her står tittelen!</h2>
-          <div class="n4f-grant__excerpt">Her står ingressen</div>
-        </header>
-        <div class="n4f-grant__sidebar">
-          Innhold i sidebar, f.eks. en n4f-contact eller en infosnippet med button osv.?
+      <div class="n4f-grant-list">
+        <!--TODO: søkefunksjon/filter for støtteordninger -->
+        <div class="n4f-grant-list__filter"></div>
+        Liste over støtteordninger.
+        De må tas fra en database eller noe.
+        Her er et eksempel på et innslag i listen.
+        <div class="n4f-grant-list__grant">
+          <h5>Navn på Ordning</h5>
+          <p>Beskrivelse med ord</p>
+          <div class="container">
+            <span>Ting1<br /></span>
+            <span>Ting2<br /></span>
+            <span>Ting3<br /></span>
+          </div>
+          <button class="n4f-button"> Trykk for mer info (lenke til side om støtteordningen.)</button>
+          <button class="n4f-button"> Last ned PDF</button>
         </div>
-        <div class="n4f-grant__grant-list">
-          Liste over støtteordninger, som er objekter med klassen n4f-grant__grant
-          De må tas fra en database eller noe. På de objektene vil vi ha kortfattet \
-          info og en knapp
-
-        </div>
-        <!-- bilder burde integreres smartere, kanskje.-->
-      </article>
+      </div>
     </main>
   </body>
 </html>
