@@ -11,6 +11,7 @@
 ###n4f-page
 - `n4f-page`
 - `n4f-page__excerpt`
+- `n4f-image__image-floating_position_right`
 <<<<<<< HEAD
 
 ###n4f-header
@@ -20,5 +21,5 @@
 - `n4f-page__sidebar`
 
 ###n4f-image
-- `n4f-image__image-floating_position_right`
+
 >>>>>>> 577a67f50fff2fda89c833f67d84ef49730f65ef
