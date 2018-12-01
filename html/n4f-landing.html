@@ -1,13 +1,17 @@
-import React from 'react';
-import './Landing.scss';
-import N4FHeader from '../common/N4FHeader.jsx';
-import N4FFooter from '../common/N4FFooter.jsx';
-
-function Landing() {
-  return <div>
-      {N4FHeader()}
+<!DOCTYPE html>
+<html lang="nb-no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="n4f-header"></div>
+      </header>
       <article class="n4f-highlight">
-        <p class="n4f-highlight__intro-text">Super-Hyperion er det nasjonale forbundet for fantastiske fritidsinteresser.</p>
+        <p class="n4f-highlight__intro-text">Hyperion er det nasjonale forbundet for fantastiske fritidsinteresser.</p>
       </article>
       <article class="n4f-hightlight">
         <p class="n4f-highlight_membership">Som medlemsforening i Hyperion får du en rekke medlemsfordeler.</p>
@@ -26,7 +30,9 @@ function Landing() {
         <p class="n4f-articlebox__article-title">Overskrift</p>
         <div class="n4f-article__excerpt">Her står ingressen. les mer</div>
       </article>
-      {N4FFooter()}
-    </div>;
-}
-export default Landing;
+      <footer>
+        <div class="n4f-footer">Her kjem footern</div>
+      </footer>
+    </main>
+  </body>
+</html>
