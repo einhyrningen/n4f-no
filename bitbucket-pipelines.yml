@@ -7,3 +7,12 @@ pipelines:
         script:
           - yarn
           - yarn lint
+  master:
+    - step:
+        image: devillex/docker-firebase:latest
+        caches:
+          - node
+        script:
+          - yarn
+          - yarn build
+          - firebase deploy --token $FIREBASE_TOKEN
