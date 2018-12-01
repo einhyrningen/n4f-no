@@ -17,12 +17,12 @@ function Landing() {
           </div>
         </article>
         <article class="n4f-mainarticlebox">
-          <img src="https://via.placeholder.com/690x304" />
+          <img src="https://via.placeholder.com/690x304" alt="" />
           <p class="n4f-articlebox__article-title">Overskrift</p>
           <div class="n4f-article__excerpt">Her står ingressen</div>
         </article>
         <article class="n4f-articlebox">
-          <img src="https://via.placeholder.com/690x304" />
+          <img src="https://via.placeholder.com/690x304" alt="" />
           <p class="n4f-articlebox__article-title">Overskrift</p>
           <div class="n4f-article__excerpt">Her står ingressen. les mer</div>
         </article>
