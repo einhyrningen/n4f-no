@@ -1,0 +1,17 @@
+@import '../../_vars';
+
+.n4f-nav {
+  display: flex;
+  align-items: center;
+  &__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 1rem 0 1rem;
+    &:first-child {
+      padding-left: 0px;
+    }
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+}

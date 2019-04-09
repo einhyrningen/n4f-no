@@ -1,0 +1,19 @@
+@import '../../_vars';
+
+.n4f-header {
+  background: $primaryColor;
+  &__inner {
+    @extend %container;
+
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+
+    &-logo {
+      width: 200px;
+    }
+    &-nav {
+      margin-left: auto;
+    }
+  }
+}
