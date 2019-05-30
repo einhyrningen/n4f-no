@@ -1,10 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from "gatsby";
+import * as T from 'prop-types';
 import N4FHeader from './components/N4FHeader';
 import N4FFooter from './components/N4FFooter';
 import './N4FLayout.scss';
 
 function N4FLayout({children}) {
+
+  const pages = useStaticQuery(graphql`
+    {
+      allPrismicPage {
+        edges {
+          node {
+            id
+            uid
+          }
+        }
+      }
+    }
+  `);
+
+  console.log(pages);
+
   return (
     <div>
       <N4FHeader />
@@ -18,7 +35,7 @@ function N4FLayout({children}) {
 
 
 N4FLayout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: T.node.isRequired,
 };
 
 export default N4FLayout;
