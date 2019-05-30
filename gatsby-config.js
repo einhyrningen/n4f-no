@@ -15,6 +15,15 @@ module.exports = {
     // },
     // `gatsby-transformer-sharp`,
     // `gatsby-plugin-sharp`,
+
+    {
+      resolve: `gatsby-source-prismic`,
+      options: {
+        repositoryName: `hyperion.cdn`,
+        accessToken: `MC5YT19xZXhBQUFId3FkX0g3.77-9Gu-_ve-_vV7vv71JNe-_ve-_ve-_ve-_vQFCYVgG77-977-977-977-9KSVRdmgi77-977-9a3oh`,
+        lintResolver: () => {},
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
