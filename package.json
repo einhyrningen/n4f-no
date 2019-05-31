@@ -6,6 +6,7 @@
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^8.0.0",
     "firebase-cli": "^1.2.0",
+    "formik": "^1.5.7",
     "gatsby": "^2.7.5",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -24,7 +25,8 @@
     "react-helmet": "^5.2.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "yup": "^0.27.0"
   },
   "sasslintConfig": "sass-lint.yml",
   "scripts": {

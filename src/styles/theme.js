@@ -5,11 +5,22 @@ export default {
       brand: '#5d1943',
       lightGray: '#e9e9e9',
       subText: '#95989a',
+      subTextSecond: '#383838',
 
       control: {
         dark: 'white',
         light: 'brand',
       },
+    },
+
+    control: {
+      border: {
+        radius: '0',
+      },
+    },
+
+    input: {
+      padding: '23px',
     },
   },
 
@@ -23,6 +34,7 @@ export default {
       horizontal: '',
     },
   },
+
 
   text: {
     xsmall: {

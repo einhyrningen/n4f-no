@@ -2,15 +2,15 @@ import React from 'react';
 import '../index.css';
 import { Grommet } from 'grommet';
 
-import Landing from '../components/landing/Landing';
+import ContactUsComponent from '../components/contact-us/ContactUs';
 import theme from '../styles/theme';
 
-function Index() {
+const ContactUs = () => {
   return (
     <Grommet theme={theme}>
-      <Landing />
+      <ContactUsComponent />
     </Grommet>
   );
 }
 
-export default Index;
+export default ContactUs;
