@@ -1,13 +1,14 @@
 import React, { useMemo } from 'react';
 import * as T from 'prop-types';
 
+import TextSlice from './TextSlice';
 
-const Echo = prepend => props => prepend + ' ' + JSON.stringify(props);
+const Echo = prepend => props => prepend;
 
 // TODO: replace Echo component with real implementation
 const componentMap = {
-  text: Echo('Text'),
-  text1: Echo('Text1'),
+  text: TextSlice,
+  text1: TextSlice,
   hero: Echo('Hero'),
   image_gallery: Echo('ImageGallery'),
 };
@@ -23,8 +24,8 @@ const componentMap = {
 const Slice = ({ body, order }) => {
   const slices = useMemo(() => body
     .sort((a, b) => {
-      const aIndex = order.indexOf(a.slice_type);
-      const bIndex = order.indexOf(b.slice_type);
+      const aIndex = order.indexOf(a.slice_type) !== -1 ? order.indexOf(a.slice_type) : Infinity;
+      const bIndex = order.indexOf(b.slice_type) !== -1 ? order.indexOf(b.slice_type) : Infinity;
       return aIndex < bIndex ? -1 : 1;
     }),
   [body, order])
@@ -38,20 +39,19 @@ const Slice = ({ body, order }) => {
 
   return (
     <>
-      {slices.map(({ Component, ...props }) => (
-        <Component {...props} />
+      {slices.map(({ Component, ...props }, i) => (
+        <Component key={i} {...props} />
       ))}
     </>
   );
 };
 
 Slice.propTypes = {
-  body: T.shape(T.any),
+  body: T.arrayOf(T.any).isRequired,
   order: T.arrayOf(T.string),
 };
 
 Slice.defaultProps = {
-  body: {},
   order: [],
 };
 
