@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import * as T from 'prop-types';
 
 import TextSlice from './TextSlice';
+import GallerySlice from './GallerySlice';
 
 const Echo = prepend => props => prepend;
 
@@ -10,7 +11,7 @@ const componentMap = {
   text: TextSlice,
   text1: TextSlice,
   hero: Echo('Hero'),
-  image_gallery: Echo('ImageGallery'),
+  image_gallery: GallerySlice,
 };
 
 /**
