@@ -1,27 +1,46 @@
 import React from 'react';
+import styled from 'styled-components';
+import { Text, Box, Button } from 'grommet';
+
 import './N4FFooter.scss';
+import N4FContainer from '../N4FContainer';
 import N4FLogo from './N4FLogo';
+
+
+const StyledN4FLogo = styled(N4FLogo)`
+  width: 200px;
+`;
 
 function N4FFooter() {
   return (
-    <div>
-      <footer className="n4f-footer">
-        <N4FLogo className="n4f-footer__logo" fill="#FFFFFF" />
-        <div class="n4f-button btn btn-default">Kontakt oss</div>
-        <div class="n4f-contact__contact-info">
-          <p class="n4f-contact__identity"><strong>Hyperion - Norsk Forbund for Fantastiske Fritidsinteresser</strong></p>
-          <p class="n4f-contact__organisation-id">Organisasjonsnummer: 984 302 320</p>
-          <p class="n4f-contact__phone">22 99 37 45</p>
-          <p class="n4f-contact__mail">n4f@n4f.no</p>
-        </div>
-        <div class="n4f-social__social-box">
-          <div class="n4f-social__facebook"></div>
-          <div class="n4f-social__twitter"></div>
-          <div class="n4f-social__instagram"></div>
-          <div class="n4f-social__youtube"></div>
-        </div>
-      </footer>
-    </div>
+    <footer>
+      <Box background="brand">
+        <N4FContainer pad={{ vertical: '53px' }} gap="large" direction="row">
+          <Box gap="medium">
+            <StyledN4FLogo fill="#FFFFFF" />
+            <Button label="Kontakt oss" />
+          </Box>
+
+          <Box>
+            <Text weight="bold">
+              Hyperion - Norsk Forbund for Fantastiske Fritidsinteresser
+            </Text>
+
+            <Text size="small">Org. nr.: 984 302 320</Text>
+            <Text size="small" margin="20px 0 0">
+              Kolstadgata 1
+              <br />
+              0123 Oslo
+            </Text>
+            <Text size="small" margin="20px 0 0">
+              Tlf.: 23 00 30 00
+              <br />
+              E-post: n4f@n4f.no
+            </Text>
+          </Box>
+        </N4FContainer>
+      </Box>
+    </footer>
   );
 }
 
