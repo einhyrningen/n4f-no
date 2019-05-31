@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import N4FNav from './N4FNav';
 import N4FLogo from './N4FLogo';
 import './N4FHeader.scss';
