@@ -25,6 +25,10 @@ fragment TextFragment on PrismicPageBodyText {
     primary {
         text {
             html
+            raw{
+              type
+              text
+            }
         }
     }
 }
