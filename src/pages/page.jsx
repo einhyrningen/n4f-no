@@ -5,7 +5,6 @@ import N4FLayout from '../components/layout/N4FLayout';
 import Slice from '../components/Slice/Slice';
 
 const Page = ({ pageContext }) => {
-  console.log(pageContext);
   return (
     <Grommet theme={theme}>
       <N4FLayout>
