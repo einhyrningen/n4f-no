@@ -1,4 +1,3 @@
-
 export default {
   global: {
     colors: {
@@ -34,7 +33,6 @@ export default {
       horizontal: '',
     },
   },
-
 
   text: {
     xsmall: {

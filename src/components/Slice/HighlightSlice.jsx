@@ -1,6 +1,5 @@
 import React from 'react';
 import * as T from 'prop-types';
-import { RichText } from 'prismic-reactjs';
 import { Box } from 'grommet';
 import styled from 'styled-components';
 // import { Text, Heading, Paragraph } from 'grommet';
@@ -11,10 +10,10 @@ const Highlight = styled(Box)`
 `;
 
 const HighlightSlice = ({ primary }) => {
-  const text = RichText.render(primary.text.raw.map((part => ({
+  const text = primary.text.raw.map((part => ({
     ...part,
     spans: [],
-  }))));
+  })));
   return (
     <N4FContainer>
       <Highlight>{text}</Highlight>

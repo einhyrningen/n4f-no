@@ -8,7 +8,8 @@ const Page = ({ pageContext }) => {
   return (
     <Grommet theme={theme}>
       <N4FLayout>
-        {/* <Heading>{pageContext.data.title.text}</Heading> */}
+        <Heading>{pageContext.data.title}</Heading>
+        <div dangerouslySetInnerHTML={{ __html: pageContext.data.content }} />
         {/* <Slice body={pageContext.data.body} /> */}
       </N4FLayout>
     </Grommet>

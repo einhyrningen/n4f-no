@@ -11,6 +11,6 @@ const ContactUs = () => {
       <ContactUsComponent />
     </Grommet>
   );
-}
+};
 
 export default ContactUs;
