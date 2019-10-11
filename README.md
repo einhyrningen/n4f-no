@@ -1,5 +1,7 @@
 # Hyperion – Norsk Forbund For Fantastiske Fritidsinteresser
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0222b8d3-5f97-4ff2-b6e0-15a0b4afc936/deploy-status)](https://app.netlify.com/sites/determined-lewin-a2aa25/deploys)
+
 This repository is for [NAFFA – Norwegian Association Fantastic Activities](https://n4f.no/).
 
 ## Contribute?
