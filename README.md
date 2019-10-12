@@ -10,6 +10,6 @@ We ❤️ to get help to make our website better. If you have ideas, you can dis
 
 ### Contributors
 
- - Brage Sekse Aarset ([h579704](https://github.com/h579704))
+ - Brage Sekse Aarset ([braaar](https://github.com/braaar))
  - Simon Skjerven
  - Simen A. W. Olsen ([cobraz](https://github.com/cobraz))
