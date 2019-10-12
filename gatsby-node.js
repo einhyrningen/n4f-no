@@ -35,7 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
   */
 
   const postParentSlug = ({ id, categories }) => {
-    return categories
+    return categories.filter(s => s !== 'uncategorized')
       ? categories
           .map(s => s.slug)
           .filter(s => s !== 'uncategorized')
