@@ -7,6 +7,10 @@ import Slice from '../Slice/Slice';
 import './N4FLayout.scss';
 
 function N4FLayout({ children }) {
+  /**
+   * @todo Clean up N4FLayout component
+   * @body This needs a bit of cleaning/clearing
+   */
 
   // const { allPrismicPage: { edges: [,{ node: { data } }] } } = useStaticQuery(graphql`
   //   {

@@ -5,6 +5,10 @@ import TextSlice from './TextSlice';
 import GallerySlice from './GallerySlice';
 import HighlightSlice from './HighlightSlice';
 
+/**
+ * @todo Should we use Slice?
+ * @body This was built when we used Prismic, is it usable?
+ */
 
 /**
  * display list of slices that send in `body`

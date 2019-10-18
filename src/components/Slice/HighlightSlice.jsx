@@ -11,6 +11,10 @@ const Highlight = styled(Box)`
 `;
 
 const HighlightSlice = ({ primary }) => {
+  /**
+   * @todo Should we use Highlight Slice?
+   * @body This was built when we used Prismic, is it usable?
+   */
   const text = RichText.render(primary.text.raw.map((part => ({
     ...part,
     spans: [],

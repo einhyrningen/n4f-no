@@ -3,6 +3,14 @@ import './Landing.scss';
 import N4FLayout from '../layout/N4FLayout';
 
 function Landing() {
+  /**
+   * @todo Add large image to landing page
+   * @body This should have a large image, as showcased in the design. Should be received from API.
+   */
+  /**
+   * @todo Add articles to landing page
+   * @body Landing page should have a grid with articles, perferably with one or more large ones (two in width / four in width)
+   */
   return (
     <div>
       <N4FLayout>

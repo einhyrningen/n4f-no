@@ -5,6 +5,10 @@ import Img from 'gatsby-image';
 import N4FContainer from '../layout/N4FContainer';
 
 const GallerySlice = ({ items }) => {
+  /**
+   * @todo Should we use Gallery Slice?
+   * @body This was built when we used Prismic, is it usable?
+   */
   const size = useContext(ResponsiveContext);
 
   return (

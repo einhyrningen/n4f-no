@@ -16,6 +16,10 @@ const StyledButton = styled(Button)`
   max-width: 200px;
 `;
 
+/**
+ * @todo Finish contact form implementation
+ * @body This only submits, and it might be better to replace it with a more "gatsby native" functionality.
+ */
 const contactUsFormEnhancer = withFormik({
   displayName: 'ContactUs',
   // mapPropsToValues: props => ({ email: props.user.email }),
@@ -26,7 +30,6 @@ const contactUsFormEnhancer = withFormik({
   }),
   handleSubmit: (values, { setSubmitting }) => {
     setTimeout(() => {
-
       alert(JSON.stringify(values, null, 2));
       setSubmitting(false);
     }, 1000);
@@ -86,19 +89,21 @@ const ContactUs = ({
         </Box>
 
         <MaxWidthBox>
+          {/**
+           * @todo Change to settings?
+           * @body Should we utilize a API endpoint for information here? This would help _Sekreteriatet_ do changes without changing code.
+           */}
           <Text weight="bold">
             Hyperion - Norsk Forbund For Fantastiske Fritidsinteresser
           </Text>
           <Text color="subTextSecond">Org. nr.: 984 302 320</Text>
 
           <Text color="subTextSecond" margin="15px 0 0">
-            Kolstadgata 1
-            0123 Oslo
+            Kolstadgata 1 0123 Oslo
           </Text>
 
           <Text color="subTextSecond" margin="15px 0 15px">
-            Tlf.: 23 00 30 00
-            E-post: n4f@n4f.no
+            Tlf.: 23 00 30 00 E-post: n4f@n4f.no
           </Text>
 
           <StyledButton label="Se vårt sekræteriat" />

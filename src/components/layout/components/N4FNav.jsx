@@ -5,6 +5,10 @@ import { Link } from 'gatsby';
 // <div className="n4f-nav__menu-button">Meny</div>
 
 function N4FNav({ className }) {
+  /**
+   * @todo Implement navigation
+   * @body This navigation is way to static.
+   */
   return (
     <div className={className}>
       <nav className="n4f-nav">

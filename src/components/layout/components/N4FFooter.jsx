@@ -12,6 +12,10 @@ const StyledN4FLogo = styled(N4FLogo)`
 `;
 
 function N4FFooter() {
+  /**
+   * @todo Replace to API endpoint
+   * @body This also, should use a endpoint of sorts. It makes more sense.
+   */
   return (
     <footer>
       <Box background="brand">
